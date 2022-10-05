@@ -2,10 +2,10 @@
 
 namespace Code16\OhdearArtisanMaintenancePeriod;
 
+use Code16\OhdearArtisanMaintenancePeriod\Commands\MaintenancePeriodStartCommand;
 use Code16\OhdearArtisanMaintenancePeriod\Commands\MaintenancePeriodStopCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Code16\OhdearArtisanMaintenancePeriod\Commands\MaintenancePeriodStartCommand;
 
 class OhdearArtisanMaintenancePeriodServiceProvider extends PackageServiceProvider
 {

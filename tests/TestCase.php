@@ -2,9 +2,9 @@
 
 namespace Code16\OhdearArtisanMaintenancePeriod\Tests;
 
+use Code16\OhdearArtisanMaintenancePeriod\OhdearArtisanMaintenancePeriodServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Code16\OhdearArtisanMaintenancePeriod\OhdearArtisanMaintenancePeriodServiceProvider;
 
 class TestCase extends Orchestra
 {
