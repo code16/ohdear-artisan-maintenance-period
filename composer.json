@@ -1,24 +1,25 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "code16/ohdear-artisan-maintenance-period",
+    "description": "a basic artisan command to start/stop a maintenance period for current laravem project's ohdear site",
     "keywords": [
-        ":vendor_name",
+        "code16",
         "laravel",
-        ":package_slug"
+        "ohdear-artisan-maintenance-period"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/code16/ohdear-artisan-maintenance-period",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Arnaud Becher",
+            "email": "arnaud.becher@gmail.com",
             "role": "Developer"
         }
     ],
     "require": {
         "php": "^8.1",
-        "spatie/laravel-package-tools": "^1.13.0",
-        "illuminate/contracts": "^9.0"
+        "illuminate/contracts": "^9.0",
+        "ohdearapp/ohdear-php-sdk": "^3.4",
+        "spatie/laravel-package-tools": "^1.13.0"
     },
     "require-dev": {
         "laravel/pint": "^1.0",
@@ -35,13 +36,13 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories"
+            "Code16\\OhdearArtisanMaintenancePeriod\\": "src",
+            "Code16\\OhdearArtisanMaintenancePeriod\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
+            "Code16\\OhdearArtisanMaintenancePeriod\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -56,10 +57,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "Code16\\OhdearArtisanMaintenancePeriod\\OhdearArtisanMaintenancePeriodServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "OhdearArtisanMaintenancePeriod": "Code16\\OhdearArtisanMaintenancePeriod\\Facades\\OhdearArtisanMaintenancePeriod"
             }
         }
     },
